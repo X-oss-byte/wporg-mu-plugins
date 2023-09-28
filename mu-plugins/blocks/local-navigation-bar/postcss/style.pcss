@@ -11,14 +11,42 @@
 }
 
 .wp-block-wporg-local-navigation-bar {
-	& > *:nth-child(3) {
-		flex-basis: 100%;
+
+	@media (min-width: 890px) {
+		& .global-header__wporg-logo-mark {
+			position: absolute;
+			top: -5px;
+			left: 0;
+			opacity: 0;
+			padding: 16px var(--wp--style--block-gap);
+			transition: all 0.2s ease-in-out;
+			visibility: hidden;
+
+			& a {
+				display: block;
+				color: inherit;
+			}
+
+			& svg {
+				fill: currentcolor;
+			}
+		}
+
+		&.is-sticking .global-header__wporg-logo-mark {
+			opacity: 1;
+			top: 0;
+			visibility: visible;
+		}
 	}
 
 	/* Reset the sticky position on small screens. */
 	@media (max-width: 889px) {
 		position: relative !important;
 		top: 0 !important;
+
+		& .global-header__wporg-logo-mark {
+			display: none;
+		}
 	}
 
 	&.is-style-brush-stroke {
