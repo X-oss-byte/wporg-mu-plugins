@@ -1,0 +1,1 @@
+!function(){"use strict";var e,o,t,n;e=window.wp.element,o=window.wp.blocks,t=window.wp.blockEditor,n=JSON.parse('{"u2":"wporg/table-of-contents"}'),(0,o.registerBlockType)(n.u2,{edit:function(){return(0,e.createElement)("div",(0,t.useBlockProps)(),"Table of contents")},save:()=>null})}();

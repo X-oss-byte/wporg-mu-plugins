@@ -1,0 +1,1 @@
+!function(){"use strict";var e,t,o,r;e=window.wp.element,t=window.wp.blocks,o=window.wp.blockEditor,r=JSON.parse('{"u2":"wporg/query-total"}'),(0,t.registerBlockType)(r.u2,{edit:function(){return(0,e.createElement)("div",(0,o.useBlockProps)(),"10 items")},save:()=>null})}();

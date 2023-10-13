@@ -1,0 +1,1 @@
+!function(){"use strict";var e,n,t,r;e=window.wp.element,n=window.wp.blocks,t=window.wp.blockEditor,r=JSON.parse('{"u2":"wporg/sidebar-container"}'),(0,n.registerBlockType)(r.u2,{edit:function(){return(0,e.createElement)("div",(0,t.useBlockProps)(),(0,e.createElement)(t.InnerBlocks,null))},save:()=>(0,e.createElement)(t.InnerBlocks.Content,null)})}();
